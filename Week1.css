@@ -13,9 +13,7 @@ div header {
     text-align:center;
     font-family:Lora, Arial, sans-serif;
 }
-nav ul{
-    border-style:black;
-}
+
 nav{
     border-top: 2px solid #d0d0d0;
     border-bottom:2px solid #d0d0d0;
@@ -58,4 +56,4 @@ main {
     font-family:Helvetica, Arial, sans-serif;
 }
 
-};
+}
