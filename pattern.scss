@@ -1,0 +1,91 @@
+
+@use 'variables' as *; 
+@use 'atoms';
+
+
+.frame1 {
+    margin: 3%;
+    position: relative;
+}
+
+.f1content{
+    position: absolute;
+    top: 24px;
+    left: 58px;
+}
+.colors {
+    margin: 3%;
+    position: relative;
+}
+
+.colorscontent{
+    position: absolute;
+    top: 95px;
+    left: 91px;
+}
+.colorscontent {
+  @include atoms.set-flex();
+  > h3 {
+    width: 100%;
+    flex: 1 0 100%;
+  }
+  > figure {
+    margin: 0;
+    flex: 1 1 50%;
+  }
+}
+.elements{
+    margin: 3%;
+    position: relative;
+}
+
+.elementscontent{
+    column-count: 2;
+    position: absolute;
+    top: 95px;
+    left: 91px;
+}
+
+.swatch {
+  width: 100%;
+  height: 100px;
+  border: 1px solid;
+}
+.background {
+  background-color: $body-background-color;
+}
+.primary{
+  background-color: $primary-color;
+}
+.accent1 {
+  background-color: $accent-color1;
+}
+.accent2 {
+  background-color: $accent-color2;
+}
+.text {
+    background-color: $paragraph-color;
+  }
+.f1content{
+    column-count:2;
+    column-gap: 15px;
+  }
+.f1content h1{
+    @include atoms.set-font( $size:.9em,$font:$headline-font );
+  }
+.f1content h2{
+    @include atoms.set-font( $size:.9em,$font:$smaller-headlines-font );
+  }
+.f1content h3{
+    @include atoms.set-font($size:2em, $font:$body-font);
+    column-span:all;
+  }
+.f1content h4{
+    @include atoms.set-font($size:.9em, $font:$body-font);
+    font-style: italic;
+    margin-top:0;
+  }
+.f1content p{
+    @include atoms.set-font($size:.9em, $font:$body-font);
+    margin-top:0;
+  }
